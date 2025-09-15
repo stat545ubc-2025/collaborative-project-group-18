@@ -6,7 +6,7 @@
 - Juntai (George) Cao
 - Yvette Ni
 - Xiaoxi Gao
-- Audrey Siu (not responding on slack as of 14 Sep 2025 @ 10:33 PM)
+- Audrey Siu
 
 ## Introduction
 

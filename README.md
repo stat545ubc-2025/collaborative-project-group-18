@@ -10,6 +10,19 @@
 
 ## Introduction
 
+##Brief Description
+
+What is this project?
+N/A
+
+What files are in the project folder / GitHub repository, at a high level?
+Our files include this README.md file as well as a TEAMWORK.md file, which contains information about team members and a guideline as to how the members will be working together 
+(division of labour, timing for pull requests and reviews, and mode of communication)
+
+
+How can they run code that appears in your folder / GitHub repository? Again, at a high level.
+N/A
+
 ## Markdown Features
 
 1. Headings (with various levels)

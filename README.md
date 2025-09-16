@@ -12,15 +12,17 @@
 
 ## Brief Description
 
-What is this project?
+What is this project?  
 N/A
 
-What files are in the project folder / GitHub repository, at a high level?
-Our files include this README.md file as well as a TEAMWORK.md file, which contains information about team members and a guideline as to how the members will be working together 
+Files in the project folder:
+- README file: You're reading this file!
+- TEAMWORK file: contains information about team members and a guideline as to how the members will be working together 
 (division of labour, timing for pull requests and reviews, and mode of communication)
+- troubleshooting-1 file: document in which we fixed 3 coding errors
 
 
-How can they run code that appears in your folder / GitHub repository? Again, at a high level.
+How can they run code that appears in your folder / GitHub repository? Again, at a high level.  
 N/A
 
 ## Markdown Features

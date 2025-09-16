@@ -13,7 +13,14 @@
 ### Division of Labour
 
 ### Timing
+We will review teammate's work as indicated below:
+- Harvey (Reviewer: Audrey)
+- George (Reviewer: Harvey)
+- Xiaoxi (Reviewer: George)
+- Yvette (Reviewer: Xiaoxi)
+- Audrey (Reviewer: Yvette)
 
+We aim to submit our pull requests by 5pm, Monday September 15th, 2025. 
 ### Communication
 
 We will communicate through a combination of **in-person** meetings and **remote** discussions.

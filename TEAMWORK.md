@@ -20,6 +20,7 @@ We will review teammate's work as indicated below:
 - Yvette (Reviewer: Xiaoxi)
 - Audrey (Reviewer: Yvette)
 
+We aim to submit our pull requests by 5pm, Monday September 15th, 2025. 
 ### Communication
 
 We will communicate through a combination of **in-person** meetings and **remote** discussions.
@@ -27,7 +28,6 @@ We will communicate through a combination of **in-person** meetings and **remote
 **In-Person**: We will meet briefly after each Tuesday's class to discuss progress, clarify questions, and align on next steps.
 
 **Remote**: We will use **Slack** as our primary communication platform to share updates, ask questions, and coordinate outside of class.
-
 
 ## Project Link: [GitHub Repository] (https://github.com/stat545ubc-2025/collaborative-project-group-18)
 

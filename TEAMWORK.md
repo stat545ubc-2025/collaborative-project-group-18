@@ -11,12 +11,19 @@
 ## Team Contract
 
 ### Division of Labour
+- Harvey: Setting up TEAMWORK document
+- George: Setting up and updating README document
+- Yvette: Adding timing session in README document
+- Xiaoxi: Fixing the issues in the troubleshooting document
+- Audrey: Updating teamwork contract and adding troubleshooting document
+
+Everyone reviewed all documents before submission.
 
 ### Timing
 We will review teammate's work as indicated below:
-- Harvey (Reviewer: Audrey)
-- George (Reviewer: Harvey)
-- Xiaoxi (Reviewer: George)
+- Harvey (Reviewer: George)
+- George (Reviewer: Audrey)
+- Xiaoxi (Reviewer: Harvey)
 - Yvette (Reviewer: Xiaoxi)
 - Audrey (Reviewer: Yvette)
 
@@ -35,10 +42,10 @@ We will communicate through a combination of **in-person** meetings and **remote
 
 - [x] Exercise 1: Getting Setup
 - [x] Exercise 2: Markdown Formatting
-- [ ] Exercise 3: Merge one Pull Request per Teammate
+- [x] Exercise 3: Merge one Pull Request per Teammate
 - [ ] Exercise 4: GitHub Issues
-- [ ] Exercise 5: Teamwork Contract
-- [ ] Exercise 6: Troubleshooting document
+- [x] Exercise 5: Teamwork Contract
+- [x] Exercise 6: Troubleshooting document
 - [ ] Exercise 7: README file
 - [ ] Exercise 8: Submission
 

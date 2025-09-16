@@ -28,7 +28,7 @@ We will communicate through a combination of **in-person** meetings and **remote
 
 - [x] Exercise 1: Getting Setup
 - [x] Exercise 2: Markdown Formatting
-- [x] Exercise 3: Merge one Pull Request per Teammate
+- [ ] Exercise 3: Merge one Pull Request per Teammate
 - [ ] Exercise 4: GitHub Issues
 - [ ] Exercise 5: Teamwork Contract
 - [ ] Exercise 6: Troubleshooting document

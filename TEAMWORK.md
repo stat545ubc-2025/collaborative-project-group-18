@@ -20,14 +20,10 @@
 
 Everyone reviewed all documents before submission.
 
+
 <!-- ### Timing
 
-We will review teammate's work as indicated below:
-- Harvey (Reviewer: George)
-- George (Reviewer: Audrey)
-- Xiaoxi (Reviewer: Harvey)
-- Yvette (Reviewer: Xiaoxi)
-- Audrey (Reviewer: Yvette)
+
 
 We aim to submit our pull requests by 5pm, Monday September 15th, 2025.  -->
 
@@ -45,7 +41,7 @@ We will communicate through a combination of **in-person** meetings and **remote
 
 - [x] Exercise 1: Getting Setup
 - [x] Exercise 2: Markdown Formatting
-- [x] Exercise 3: Merge one Pull Request per Teammate
+- [ ] Exercise 3: Merge one Pull Request per Teammate
 - [X] Exercise 4: GitHub Issues
 - [x] Exercise 5: Teamwork Contract
 - [x] Exercise 6: Troubleshooting document

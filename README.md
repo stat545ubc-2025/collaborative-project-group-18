@@ -34,7 +34,19 @@ rscript hello_world.R
 
 in the terminal!
 
-## Markdown Features
+## Helpers For Grading
+
+### Pull Requests
+
+The pull requests for grading and their corresponding reviewers are listed below:
+
+- Harvey: PR 2, reviewed by Juntai (George)
+- Juntai (George): PR 4, reviewed by Audrey
+- Xiaoxi: PR 8, reviewed by Harvey
+- Yvette: PR 7, reviewed by Xiaoxi
+- Audrey: PR 6/11, reviewed by Yvette
+
+### Markdown Features
 
 1. Headings (with various levels)
 2. Bullet points

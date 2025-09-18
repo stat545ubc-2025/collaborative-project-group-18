@@ -2,11 +2,11 @@
 
 ## Group Members
 
-- Harvey Palalay @HarveyPalalay
-- Juntai (George) Cao @juntaic7
-- Yvette Ni @yvetteni
-- Xiaoxi Gao @Xiaoxi-Gao7
-- Audrey Siu @audreyksiu
+- Harvey Palalay
+- Juntai (George) Cao
+- Yvette Ni
+- Xiaoxi Gao
+- Audrey Siu
 
 ## Introduction
 
@@ -48,10 +48,10 @@ The pull requests for grading and their corresponding reviewers are listed below
 
 ### Github-Flavored Markdown Features
 
-1. Task list
-2. Issue references
-3. Username mentions
-4. Code blocks
-5. Emoji
+1. Task list (TEAMWORK.md)
+2. Issue/PR references (README.md)
+3. Username mentions (Issues & PRs)
+4. Code blocks (README.md)
+5. Emoji (README.md & Issues)
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/9EMQ9uX-)

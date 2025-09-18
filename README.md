@@ -40,11 +40,19 @@ in the terminal!
 
 The pull requests for grading and their corresponding reviewers are listed below:
 
-- Harvey: PR stat545ubc-2025/collaborative-project-group-18#2, reviewed by Juntai (George)
-- Juntai (George): PR #4, reviewed by Audrey
-- Xiaoxi: PR #8, reviewed by Harvey
-- Yvette: PR #7, reviewed by Xiaoxi
-- Audrey: PR #6, reviewed by Yvette
+- Harvey: stat545ubc-2025/collaborative-project-group-18#2, reviewed by Juntai (George)
+- Juntai (George): stat545ubc-2025/collaborative-project-group-18#4, reviewed by Audrey
+- Xiaoxi: PR stat545ubc-2025/collaborative-project-group-18#8, reviewed by Harvey
+- Yvette: PR stat545ubc-2025/collaborative-project-group-18#7, reviewed by Xiaoxi
+- Audrey: PR stat545ubc-2025/collaborative-project-group-18#6, reviewed by Yvette
+
+### Pull Issues
+
+- Harvey: stat545ubc-2025/collaborative-project-group-18#13
+- Juntai (George): stat545ubc-2025/collaborative-project-group-18#12
+- Xiaoxi: PR stat545ubc-2025/collaborative-project-group-18#9
+- Yvette: PR stat545ubc-2025/collaborative-project-group-18#15
+- Audrey: PR stat545ubc-2025/collaborative-project-group-18#14
 
 ### Github-Flavored Markdown Features
 

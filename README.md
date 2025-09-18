@@ -42,17 +42,17 @@ The pull requests for grading and their corresponding reviewers are listed below
 
 - Harvey: stat545ubc-2025/collaborative-project-group-18#2, reviewed by Juntai (George)
 - Juntai (George): stat545ubc-2025/collaborative-project-group-18#4, reviewed by Audrey
-- Xiaoxi: PR stat545ubc-2025/collaborative-project-group-18#8, reviewed by Harvey
-- Yvette: PR stat545ubc-2025/collaborative-project-group-18#7, reviewed by Xiaoxi
-- Audrey: PR stat545ubc-2025/collaborative-project-group-18#6, reviewed by Yvette
+- Xiaoxi: stat545ubc-2025/collaborative-project-group-18#8, reviewed by Harvey
+- Yvette: stat545ubc-2025/collaborative-project-group-18#7, reviewed by Xiaoxi
+- Audrey: stat545ubc-2025/collaborative-project-group-18#6, reviewed by Yvette
 
 ### Intro Issues
 
 - Harvey: stat545ubc-2025/collaborative-project-group-18#13
 - Juntai (George): stat545ubc-2025/collaborative-project-group-18#12
-- Xiaoxi: PR stat545ubc-2025/collaborative-project-group-18#9
-- Yvette: PR stat545ubc-2025/collaborative-project-group-18#15
-- Audrey: PR stat545ubc-2025/collaborative-project-group-18#14
+- Xiaoxi: stat545ubc-2025/collaborative-project-group-18#9
+- Yvette: stat545ubc-2025/collaborative-project-group-18#15
+- Audrey: stat545ubc-2025/collaborative-project-group-18#14
 
 ### Github-Flavored Markdown Features
 

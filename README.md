@@ -46,7 +46,7 @@ The pull requests for grading and their corresponding reviewers are listed below
 - Yvette: PR stat545ubc-2025/collaborative-project-group-18#7, reviewed by Xiaoxi
 - Audrey: PR stat545ubc-2025/collaborative-project-group-18#6, reviewed by Yvette
 
-### Pull Issues
+### Intro Issues
 
 - Harvey: stat545ubc-2025/collaborative-project-group-18#13
 - Juntai (George): stat545ubc-2025/collaborative-project-group-18#12

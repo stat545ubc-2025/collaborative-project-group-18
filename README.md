@@ -40,7 +40,7 @@ in the terminal!
 
 The pull requests for grading and their corresponding reviewers are listed below:
 
-- Harvey: PR #2, reviewed by Juntai (George)
+- Harvey: PR stat545ubc-2025/collaborative-project-group-18#2, reviewed by Juntai (George)
 - Juntai (George): PR #4, reviewed by Audrey
 - Xiaoxi: PR #8, reviewed by Harvey
 - Yvette: PR #7, reviewed by Xiaoxi

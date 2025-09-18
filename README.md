@@ -44,7 +44,7 @@ The pull requests for grading and their corresponding reviewers are listed below
 - Juntai (George): PR 4, reviewed by Audrey
 - Xiaoxi: PR 8, reviewed by Harvey
 - Yvette: PR 7, reviewed by Xiaoxi
-- Audrey: PR 6/11, reviewed by Yvette
+- Audrey: PR 6, reviewed by Yvette
 
 ### Markdown Features
 

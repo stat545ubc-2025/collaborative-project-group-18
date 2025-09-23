@@ -140,8 +140,10 @@ Using `summarize()`, we can find the minimum and the maximum rating by title, st
 ```{r}
 ### ERROR HERE ###
 movieLens %>%
-  mutate(min_rating = min(rating), 
-         max_rating = max(rating))
+  group_by(title) %>%
+  summarize(min_rating = min(rating), 
+            max_rating = max(rating))
+# Fix the error by 1. group by title; 2.summarize max/min rating with max/min function
 ```
 
 ## Exercise 5: Scoped variants with `across()`
@@ -165,7 +167,8 @@ We can find the minimum height and mass within each species, ignoring the missin
 ### ERROR HERE ###
 starWars %>%
   group_by(species) %>%
-  summarise(across("height", "mass", function(x) min(x, na.rm=TRUE)))
+  summarise(across(c("height", "mass"), function(x) min(x, na.rm=TRUE)))
+  # Fix the error by using c() to concatenate the columns into vectors
 ```
 
 Note that here R has taken the convention that the minimum value of a set of `NA`s is `Inf`.

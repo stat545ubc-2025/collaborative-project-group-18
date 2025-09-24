@@ -81,18 +81,18 @@ movieLens %>%
 Some of the variables in the `movieLens` dataset are in *camelCase* (in fact, *movieLens* is in camelCase). Let's clean these two variables to use *snake_case* instead, and assign our post-rename object back to "movieLens".
 
 ```{r}
-### ERROR HERE ###
+### ERROR HERE (resolved) ###
 movieLens <- movieLens %>%
-  rename(user_id == userId,
-         movie_id == movieId)
+  rename(user_id = userId,
+         movie_id = movieId)
 ```
 
 As you already know, `mutate()` defines and inserts new variables into a tibble. There is *another mystery function similar to `mutate()`* that adds the new variable, but also drops existing ones. I wanted to create an `average_rating` column that takes the `mean(rating)` across all entries, and I only want to see that variable (i.e drop all others!) but I forgot what that mystery function is. Can you remember?
 
 ```{r}
-### ERROR HERE ### 
-mutate(movieLens,
-       average_rating = mean(rating))
+### ERROR HERE (resolved) ### 
+transmute(movieLens,average_rating = mean(rating))
+
 ```
 
 ## Exercise 3: Calculating with `summarise()`-like functions

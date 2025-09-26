@@ -60,4 +60,4 @@ We will communicate through a combination of **in-person** meetings and **remote
 - [x] Exercise 2: README file and tidy submission  
 - [x] Exercise 3: Submission 
 
-> Notice: This assignment is due on Friday - 25 September 2025 at 11:59 PM (PT).  
+> Notice: This assignment is due on Friday - 26 September 2025 at 11:59 PM (PT).  

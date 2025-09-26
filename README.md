@@ -21,6 +21,7 @@ This repository contains the first collaborative project for Group 18 :smiley:. 
 - TEAMWORK.md: contains information about team members and a guideline as to how the members will be working together (e.g. division of labour, timing for pull requests and reviews, and mode of communication)
 - troubleshooting-1.rmd: document in which we fixed 3 coding errors
 - hello_world.R: a simple R script demonstrating basic R functionality and serving as a practice file for running R scripts from the terminal
+- troubleshooting-2.rmd: document in which we solved 6 questions with different coding errors
 
 ## Execution
 
@@ -40,11 +41,11 @@ in the terminal!
 
 The pull requests for grading and their corresponding reviewers are listed below:
 
-- Harvey: stat545ubc-2025/collaborative-project-group-18#2, reviewed by Juntai (George)
-- Juntai (George): stat545ubc-2025/collaborative-project-group-18#4, reviewed by Audrey
-- Xiaoxi: stat545ubc-2025/collaborative-project-group-18#8, reviewed by Harvey
-- Yvette: stat545ubc-2025/collaborative-project-group-18#7, reviewed by Xiaoxi
-- Audrey: stat545ubc-2025/collaborative-project-group-18#6, reviewed by Yvette
+- Harvey: stat545ubc-2025/collaborative-project-group-18#31, reviewed by Audrey
+- Juntai (George): stat545ubc-2025/collaborative-project-group-18#28, reviewed by Harvey
+- Xiaoxi: stat545ubc-2025/collaborative-project-group-18#29, reviewed by Juntai (George)
+- Yvette: stat545ubc-2025/collaborative-project-group-18#30, reviewed by Xiaoxi
+- Audrey: stat545ubc-2025/collaborative-project-group-18#33, reviewed by Yvette
 
 ### Intro Issues
 

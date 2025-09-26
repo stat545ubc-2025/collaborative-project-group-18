@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This repository contains the first collaborative project for Group 18 :smiley:. The project serves as a practical demonstration of our team's proficiency in:
+This repository contains the first and second collaborative project for Group 18 :smiley:. The project serves as a practical demonstration of our team's proficiency in:
 
 1. **Git and GitHub Workflow**: Collaborating effectively on a shared codebase using version control best practices, including branching, merging, and pull requests.
 2. **R Programming**: Applying and reinforcing R programming concepts through hands-on practice.
@@ -45,7 +45,7 @@ The pull requests for grading and their corresponding reviewers are listed below
 - Juntai (George): stat545ubc-2025/collaborative-project-group-18#28, reviewed by Harvey
 - Xiaoxi: stat545ubc-2025/collaborative-project-group-18#29, reviewed by Juntai (George)
 - Yvette: stat545ubc-2025/collaborative-project-group-18#30, reviewed by Xiaoxi
-- Audrey: stat545ubc-2025/collaborative-project-group-18#33, reviewed by Yvette
+- Audrey: stat545ubc-2025/collaborative-project-group-18#34, reviewed by Yvette
 
 ### Intro Issues
 

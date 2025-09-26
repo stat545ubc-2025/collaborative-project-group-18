@@ -33,7 +33,7 @@ library(tidyverse)
 
     ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
     ## ✔ dplyr     1.1.4     ✔ readr     2.1.5
-    ## ✔ forcats   1.0.0     ✔ stringr   1.5.2
+    ## ✔ forcats   1.0.0     ✔ stringr   1.5.1
     ## ✔ ggplot2   4.0.0     ✔ tibble    3.3.0
     ## ✔ lubridate 1.9.4     ✔ tidyr     1.3.1
     ## ✔ purrr     1.1.0     
@@ -47,9 +47,6 @@ library(stringr)
 devtools::install_github("JoeyBernhardt/singer")
 ```
 
-    ## WARNING: Rtools is required to build R packages, but is not currently installed.
-    ## 
-    ## Please download and install Rtools 4.5 from https://cran.r-project.org/bin/windows/Rtools/.
     ## Using GitHub PAT from the git credential store.
     ## Skipping install of 'singer' from a github remote, the SHA1 (2b4fe9cb) has not changed since last install.
     ##   Use `force = TRUE` to force installation
@@ -258,16 +255,11 @@ use *snake_case* instead, and assign our post-rename object back to
 “movieLens”.
 
 ``` r
-### ERROR HERE ###
+### ERROR HERE (resolved) ###
 movieLens <- movieLens %>%
-  rename(user_id == userId,
-         movie_id == movieId)
+  rename(user_id = userId,
+         movie_id = movieId)
 ```
-
-    ## Error in `rename()`:
-    ## ℹ In argument: `user_id == userId`.
-    ## Caused by error:
-    ## ! object 'user_id' not found
 
 As you already know, `mutate()` defines and inserts new variables into a
 tibble. There is *another mystery function similar to `mutate()`* that
@@ -277,24 +269,23 @@ entries, and I only want to see that variable (i.e drop all others!) but
 I forgot what that mystery function is. Can you remember?
 
 ``` r
-### ERROR HERE ### 
-mutate(movieLens,
-       average_rating = mean(rating))
+### ERROR HERE (resolved) ### 
+transmute(movieLens,average_rating = mean(rating))
 ```
 
-    ## # A tibble: 100,004 × 8
-    ##    movieId title              year genres userId rating timestamp average_rating
-    ##      <int> <chr>             <int> <fct>   <int>  <dbl>     <int>          <dbl>
-    ##  1      31 Dangerous Minds    1995 Drama       1    2.5    1.26e9           3.54
-    ##  2    1029 Dumbo              1941 Anima…      1    3      1.26e9           3.54
-    ##  3    1061 Sleepers           1996 Thril…      1    3      1.26e9           3.54
-    ##  4    1129 Escape from New …  1981 Actio…      1    2      1.26e9           3.54
-    ##  5    1172 Cinema Paradiso …  1989 Drama       1    4      1.26e9           3.54
-    ##  6    1263 Deer Hunter, The   1978 Drama…      1    2      1.26e9           3.54
-    ##  7    1287 Ben-Hur            1959 Actio…      1    2      1.26e9           3.54
-    ##  8    1293 Gandhi             1982 Drama       1    2      1.26e9           3.54
-    ##  9    1339 Dracula (Bram St…  1992 Fanta…      1    3.5    1.26e9           3.54
-    ## 10    1343 Cape Fear          1991 Thril…      1    2      1.26e9           3.54
+    ## # A tibble: 100,004 × 1
+    ##    average_rating
+    ##             <dbl>
+    ##  1           3.54
+    ##  2           3.54
+    ##  3           3.54
+    ##  4           3.54
+    ##  5           3.54
+    ##  6           3.54
+    ##  7           3.54
+    ##  8           3.54
+    ##  9           3.54
+    ## 10           3.54
     ## # ℹ 99,994 more rows
 
 ## Exercise 3: Calculating with `summarise()`-like functions
@@ -335,13 +326,23 @@ there have been for each year.
 ``` r
 ### ERROR HERE ###
 movieLens %>%
-  tally(year)
+ count(year, sort = TRUE)
 ```
 
-    ## # A tibble: 1 × 1
-    ##           n
-    ##       <int>
-    ## 1 199176755
+    ## # A tibble: 104 × 2
+    ##     year     n
+    ##    <int> <int>
+    ##  1  1995  6635
+    ##  2  1994  5861
+    ##  3  1996  5109
+    ##  4  1999  5034
+    ##  5  1993  4214
+    ##  6  1997  4060
+    ##  7  2000  4054
+    ##  8  1998  4019
+    ##  9  2001  3442
+    ## 10  2002  3090
+    ## # ℹ 94 more rows
 
 Both `count()` and `tally()` can be grouped by multiple columns. Below,
 I want to count the number of movie reviews by title and rating, and
@@ -350,13 +351,23 @@ sort the results.
 ``` r
 ### ERROR HERE ###
 movieLens %>%
-  count(c(title, rating), sort = TRUE)
+  count(title, rating, sort = TRUE) 
 ```
 
-    ## Error in `count()`:
-    ## ℹ In argument: `c(title, rating)`.
-    ## Caused by error:
-    ## ! `c(title, rating)` must be size 100004 or 1, not 200008.
+    ## # A tibble: 28,297 × 3
+    ##    title                              rating     n
+    ##    <chr>                               <dbl> <int>
+    ##  1 Shawshank Redemption, The               5   170
+    ##  2 Pulp Fiction                            5   138
+    ##  3 Star Wars: Episode IV - A New Hope      5   122
+    ##  4 Forrest Gump                            4   113
+    ##  5 Schindler's List                        5   109
+    ##  6 Godfather, The                          5   107
+    ##  7 Forrest Gump                            5   102
+    ##  8 Silence of the Lambs, The               4   102
+    ##  9 Fargo                                   5   100
+    ## 10 Silence of the Lambs, The               5   100
+    ## # ℹ 28,287 more rows
 
 Not only do `count()` and `tally()` quickly allow you to count items
 within your dataset, `add_tally()` and `add_count()` are handy shortcuts
@@ -396,24 +407,29 @@ respectively.
 ``` r
 ### ERROR HERE ###
 movieLens %>%
-  mutate(min_rating = min(rating), 
-         max_rating = max(rating))
+  group_by(title) %>%
+  summarize(min_rating = min(rating), 
+            max_rating = max(rating))
 ```
 
-    ## # A tibble: 100,004 × 9
-    ##    movieId title       year genres userId rating timestamp min_rating max_rating
-    ##      <int> <chr>      <int> <fct>   <int>  <dbl>     <int>      <dbl>      <dbl>
-    ##  1      31 Dangerous…  1995 Drama       1    2.5    1.26e9        0.5          5
-    ##  2    1029 Dumbo       1941 Anima…      1    3      1.26e9        0.5          5
-    ##  3    1061 Sleepers    1996 Thril…      1    3      1.26e9        0.5          5
-    ##  4    1129 Escape fr…  1981 Actio…      1    2      1.26e9        0.5          5
-    ##  5    1172 Cinema Pa…  1989 Drama       1    4      1.26e9        0.5          5
-    ##  6    1263 Deer Hunt…  1978 Drama…      1    2      1.26e9        0.5          5
-    ##  7    1287 Ben-Hur     1959 Actio…      1    2      1.26e9        0.5          5
-    ##  8    1293 Gandhi      1982 Drama       1    2      1.26e9        0.5          5
-    ##  9    1339 Dracula (…  1992 Fanta…      1    3.5    1.26e9        0.5          5
-    ## 10    1343 Cape Fear   1991 Thril…      1    2      1.26e9        0.5          5
-    ## # ℹ 99,994 more rows
+    ## # A tibble: 8,832 × 3
+    ##    title                              min_rating max_rating
+    ##    <chr>                                   <dbl>      <dbl>
+    ##  1 "\"Great Performances\" Cats"             0.5        3  
+    ##  2 "$9.99"                                   2.5        4.5
+    ##  3 "'Hellboy': The Seeds of Creation"        2          2  
+    ##  4 "'Neath the Arizona Skies"                0.5        0.5
+    ##  5 "'Round Midnight"                         0.5        4  
+    ##  6 "'Salem's Lot"                            3.5        3.5
+    ##  7 "'Til There Was You"                      0.5        4  
+    ##  8 "'burbs, The"                             1.5        4.5
+    ##  9 "'night Mother"                           5          5  
+    ## 10 "(500) Days of Summer"                    0.5        5  
+    ## # ℹ 8,822 more rows
+
+``` r
+# Fix the error by 1. group by title; 2. summarize max/min rating with max/min function
+```
 
 ## Exercise 5: Scoped variants with `across()`
 
@@ -447,15 +463,35 @@ the missing values:
 ### ERROR HERE ###
 starWars %>%
   group_by(species) %>%
-  summarise(across("height", "mass", function(x) min(x, na.rm=TRUE)))
+  summarise(across(c("height", "mass"), function(x) min(x, na.rm=TRUE)))
 ```
 
-    ## Error in `summarise()`:
-    ## ℹ In argument: `across("height", "mass", function(x) min(x, na.rm =
-    ##   TRUE))`.
-    ## ℹ In group 1: `species = "Aleena"`.
-    ## Caused by error in `across()`:
-    ## ! `.fns` must be a function, a formula, or a list of functions/formulas.
+    ## Warning: There were 6 warnings in `summarise()`.
+    ## The first warning was:
+    ## ℹ In argument: `across(c("height", "mass"), function(x) min(x, na.rm = TRUE))`.
+    ## ℹ In group 4: `species = "Chagrian"`.
+    ## Caused by warning in `min()`:
+    ## ! no non-missing arguments to min; returning Inf
+    ## ℹ Run `dplyr::last_dplyr_warnings()` to see the 5 remaining warnings.
+
+    ## # A tibble: 38 × 3
+    ##    species   height  mass
+    ##    <chr>      <int> <dbl>
+    ##  1 Aleena        79    15
+    ##  2 Besalisk     198   102
+    ##  3 Cerean       198    82
+    ##  4 Chagrian     196   Inf
+    ##  5 Clawdite     168    55
+    ##  6 Droid         96    32
+    ##  7 Dug          112    40
+    ##  8 Ewok          88    20
+    ##  9 Geonosian    183    80
+    ## 10 Gungan       196    66
+    ## # ℹ 28 more rows
+
+``` r
+  # # Fix the error by using c() to create a vector of column names for across()
+```
 
 Note that here R has taken the convention that the minimum value of a
 set of `NA`s is `Inf`.
@@ -471,24 +507,18 @@ Manually create a tibble with 4 columns:
   and New York).
 
 ``` r
-### ERROR HERE ###
 fakeStarWars <- tribble(
-  ~name,            ~birth_weight,  ~birth_year, ~birth_location
-  "Luke Skywalker",  1.35      ,   1998        ,  Liverpool, England,
-  "C-3PO"         ,  1.80      ,   1999        ,  Liverpool, England,
-  "R2-D2"         ,  2.25      ,   2000        ,  Seattle, WA,
-  "Darth Vader"   ,  2.70      ,   2001        ,  Liverpool, England,
-  "Leia Organa"   ,  3.15      ,   2002        ,  New York, NY,
-  "Owen Lars"     ,  3.60      ,   2003        ,  Seattle, WA,
-  "Beru Whitesun Iars", 4.05   ,   2004        ,  Liverpool, England,
-  "R5-D4"         ,  4.50      ,   2005        ,  New York, NY,
+  ~name, ~birth_weight, ~birth_year, ~birth_location,
+  "Luke Skywalker", 1.35, 1998, "Liverpool, England",
+  "C-3PO", 1.80, 1999, "Liverpool, England",
+  "R2-D2", 2.25, 2000, "Seattle, WA",
+  "Darth Vader", 2.70, 2001, "Liverpool, England",
+  "Leia Organa", 3.15, 2002, "New York, NY",
+  "Owen Lars", 3.60, 2003, "Seattle, WA",
+  "Beru Whitesun Iars", 4.05, 2004, "Liverpool, England",
+  "R5-D4", 4.50, 2005, "New York, NY"
 )
 ```
-
-    ## Error in parse(text = input): <text>:4:3: unexpected string constant
-    ## 3:   ~name,            ~birth_weight,  ~birth_year, ~birth_location
-    ## 4:   "Luke Skywalker"
-    ##      ^
 
 ## Attributions
 

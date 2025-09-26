@@ -58,6 +58,6 @@ We will communicate through a combination of **in-person** meetings and **remote
 - [x] Exercise 0: Merge one Pull Request per Teammate  
 - [x] Exercise 1: Troubleshooting document 
 - [x] Exercise 2: README file and tidy submission  
-- [x] Exercise 3: Submission
+- [x] Exercise 3: Submission 
 
 > Notice: This assignment is due on Friday - 25 September 2025 at 11:59 PM (PT).  

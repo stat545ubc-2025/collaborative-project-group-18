@@ -60,7 +60,7 @@ The pull requests for grading and their corresponding reviewers are listed below
 1. Task list (TEAMWORK.md)
 2. Issue/PR references (README.md)
 3. Username mentions (Issues & PRs)
-4. Code blocks (README.md)
+4. Code blocks (README.md) 
 5. Emoji (README.md & Issues)
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/9EMQ9uX-)
